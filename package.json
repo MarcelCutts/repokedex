@@ -5,7 +5,7 @@
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "webpack": "webpack -w",
     "webpack:production": "NODE_ENV=production webpack"
   },
@@ -21,8 +21,19 @@
     "reason-react": ">=0.4.0"
   },
   "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.2",
+    "bs-enzyme": "^0.4.0",
     "bs-platform": "^3.1.5",
+    "enzyme-adapter-react-16": "^1.1.1",
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.10"
+  },
+  "jest": {
+    "testMatch": [
+      "**/?(*_)(spec|test).bs.js"
+    ],
+    "setupFiles": [
+      "./src/configuration/jest.config.js"
+    ]
   }
 }

@@ -12,14 +12,16 @@
     "subdirs" : true
   },
   "package-specs": [{
-    "module": "es6",
+    "module": "commonjs",
     "in-source": true
   }],
   "suffix": ".bs.js",
   "namespace": true,
   "bs-dependencies": [
     "reason-react",
-    "bs-css"
+    "bs-css",
+    "bs-enzyme",
+    "@glennsl/bs-jest"
   ],
   "refmt": 3
 }
