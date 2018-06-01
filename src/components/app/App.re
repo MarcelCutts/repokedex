@@ -22,5 +22,5 @@ let component = ReasonReact.statelessComponent("App");
 
 let make = _children => {
   ...component,
-  render: _self => <div className=Styles.app> ("Pokedex" |> ReasonReact.string) </div>,
+  render: _self => <div className=Styles.app> <Pokedex /> </div>,
 };

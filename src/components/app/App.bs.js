@@ -4,6 +4,7 @@
 var Css = require("bs-css/src/Css.js");
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
+var Pokedex$Repokedex = require("../pokedex/Pokedex.bs.js");
 
 Css.$$global("html", /* :: */[
       Css.height(Css.pct(100)),
@@ -56,7 +57,7 @@ function make() {
           /* render */(function () {
               return React.createElement("div", {
                           className: app
-                        }, "Pokedex");
+                        }, ReasonReact.element(/* None */0, /* None */0, Pokedex$Repokedex.make(/* array */[])));
             }),
           /* initialState */component[/* initialState */10],
           /* retainedProps */component[/* retainedProps */11],
